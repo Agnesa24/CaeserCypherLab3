@@ -71,7 +71,6 @@ namespace CaeserCypherLab3
             return text.Length;
         }
 
-
         public static char GetMostFrequentLetter(string text)
         {
             var frequency = new Dictionary<char, int>();
@@ -119,12 +118,13 @@ namespace CaeserCypherLab3
                 {
                     result.Append(c);
                 }
-                
+
             }
 
             return result.ToString();
 
         }
+
 
 
         public static void WriteOutputFile(string outputPath, string decryptedText)
